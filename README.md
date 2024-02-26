@@ -54,9 +54,15 @@ output = [2, 8, 3]
 ```
 
 ### 2. Making your power function interactive:  
-You have to modify your previous function so that it does the following:
+You have to modify your previous function so that it does the following (see video):
+- The first input prompt should be: "The base is: "
+- The second input prompt should be: "The exponent is: "
+- Once you give the function both (e.g. 2 and 3), it should print a list that has both inputs and the result at the end. For 2 and 3 the list should be: [2,3,8] because 2 to the power of 3 is 8. 
+- **This function should run infinitely unless you input "finito"**
 
-![Video](https://github.com/NLP-python-pilot/class4/assets/64445959/0bb362da-619c-4509-a685-e85e7c5ecc92)
+https://github.com/NLP-python-pilot/class4/assets/64445959/b01fec95-e31f-4d84-9389-7ff597bf2f8e
+
+
 
 
 
