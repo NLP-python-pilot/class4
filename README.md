@@ -55,7 +55,7 @@ You have to modify your previous function so that it does the following (see vid
 - You should use the `input()` function two times within your function:
     - The first input prompt (`input()` function) should be: "The base is: "
     - The second input prompt (`input()` function) should be: "The exponent is: "
-- Once you give both inputs to the function (e.g. 2 and 3), it should print a list with the following order `[base, exponent, result]`. For 2 and 3 the list should be: [2,3,8] because 2 to the power of 3 is 8. 
+- Once you give both inputs to the function (e.g. 2 and 3), it should print a list with the following order `[base, exponent, result]`. For 2 and 3 the list should be: `[2,3,8]` because 2 to the power of 3 is 8. 
 - **This function should run infinitely unless you input "finito"**
 
 https://github.com/NLP-python-pilot/class4/assets/64445959/b01fec95-e31f-4d84-9389-7ff597bf2f8e
