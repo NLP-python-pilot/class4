@@ -56,4 +56,7 @@ output = [2, 8, 3]
 ### 2. Making your power function interactive:  
 You have to modify your previous function so that it does the following:
 
+![Video](https://github.com/NLP-python-pilot/class4/assets/64445959/0bb362da-619c-4509-a685-e85e7c5ecc92)
+
+
 
