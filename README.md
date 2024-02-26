@@ -1,5 +1,3 @@
-# class4
-
 # Assignment #4 - Feb 26th to March 4th
 
 ###### *Solutions for previous assignments can be found here: https://github.com/ponceoscarj/nlp_python_pilot/tree/main*
