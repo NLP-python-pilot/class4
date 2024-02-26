@@ -21,30 +21,28 @@
 - Organise your coding by question (e.g., Q1.1.)
 
 ### 1. Creating the power function: 
-Input in the form of tupple where base goes first and the exponent or power goes second.
-
+Your function should be able generate the power of any number and should have the following input and output:
+- Input parameter: a tuple of two elements where the first element is the base and the second element is the exponent or power.
+- Output: return result in the form of integer .
 
 Example:
 ```python
-in_tupple = (3,4) # this would mean 3 raised to the power of 4 
-output = 81 # output should be an integer
+in_tupple = (3,4) # Input -> 3 raised to the power of 4 
+output = 81 # Output -> integer 81
 
-# Testing your function
+# Test your function
 in_tupple = (9,10)
 result = 1048576
 ```
 
 ### 2. Modifying the power function:  
-Modify your previous function so that it inputs a list and outputs another list
+- Modify your previous power function so that the input parameter is one list where the first element (position 0) is the base and second element (position 1) is the exponent/power. 
+- Your function should return another list containing your base, exponent/power, and result but in the following order `[base, result, exponent]` (as shown below)
 
 Example:
 ```python
-input_list = [3, 4] # this would mean 3 raised to the power of 4 
-output = [3, 81, 4] 
-# output should be a list including the input [3,4] with the result in-between -> [3, 81, 4].
-# base is in position 0 = 3
-# exponent is in position 2 = 4
-# result is in position 1 = 81
+input_list = [3, 4] # Input -> 3 raised to the power of 4 
+output = [3, 81, 4] # Output -> [base, result, exponent]
 
 # Testing your function
 in_list = [2, 3]
@@ -53,16 +51,18 @@ output = [2, 8, 3]
 
 ### 3. Making your power function interactive:  
 You have to modify your previous function so that it does the following (see video):
-- The first input prompt should be: "The base is: "
-- The second input prompt should be: "The exponent is: "
-- Once you give the function both (e.g. 2 and 3), it should print a list that has both inputs and the result at the end. For 2 and 3 the list should be: [2,3,8] because 2 to the power of 3 is 8. 
+- Your function does not require any input parameters.
+- You should use the `input()` function two times within your function:
+    - The first input prompt (`input()` function) should be: "The base is: "
+    - The second input prompt (`input()` function) should be: "The exponent is: "
+- Once you give both inputs to the function (e.g. 2 and 3), it should print a list with the following order `[base, exponent, result]`. For 2 and 3 the list should be: [2,3,8] because 2 to the power of 3 is 8. 
 - **This function should run infinitely unless you input "finito"**
 
 https://github.com/NLP-python-pilot/class4/assets/64445959/b01fec95-e31f-4d84-9389-7ff597bf2f8e
 
 ### 4. Create a function with a for loop:  
-
-- Function that adds elements from list input_1 and elements from list input_2 based on their positions. The results should be similar to the one in output.
+- Your function have two input parameters. Two lists with the same number of elements where each element is an integer such as `input_1` and `input_2`.
+- The function should add elements from list input_1 and elements from list input_2 based on their position. The results should be similar to the one in the `output` list.
 - For example, position 0 from `input_1` is 2 and position 0 from `input_2` is 4. When you add these numbers your result is 6 which is located in the position 0 from the `output` list.
 
 ```python
@@ -73,8 +73,8 @@ output = [6, 14, 60, 11]
 
 ### 5. Create a function to count positional differences and similarities:  
 
-- **Input**: the input for the function should be two lists of words where each word have the same number of characters such as `input_1` and `input_2`. 
-- **Output**: the function should return a list of lists containing the positional differences and similarities such as `output_lst`.  
+- **Input parameters**: the input parameters for the function should be two lists of words where each word have the same number of characters such as `input_1` and `input_2`. 
+- **Output**: the function should return a list of lists containing the positional differences and similarities per word such as `output_lst`.  
 
 ```python
 input_1 = ['woke', 'sleep', 'have', 'simple_word', 'of!course#']
@@ -84,7 +84,7 @@ ouput_lst = [[3, 1], [3, 2], [1, 3], [0, 11], [9, 1]]
 ```
 
 Description of the `output_lst` with examples:
-- For the first word in both `input_1` and `input_2`, the position 0, 2, 3 are the same ("w", "k", "e") but the position 1 is different. The count for this should be `[3, 1]` which is first list (position 0) inside `output_lst`
-- For the third word in both `input_1` and `input_2`, position 0 is the same ("h") and positions 1,2,3 are different. The results for this should be `[1, 3]` which is the third list (position 2) inside `output_lst`
+- The first word in both `input_1` and `input_2` are `woke` and `wake` respectively. Their characters in position 0, 2, 3 are the same ("w", "k", "e") but the characters in position 1 are different ("o" vs "a"). The positional similarity and difference counts for this word should be `[3, 1]` which is first list (position 0) inside `output_lst`
+- The third word in both `input_1` and `input_2` are `have` and `hour` respectively. Their characters in position 0 are the same ("h") and the characrters in positions 1,2,3 are different. The positional similarity and difference counts for this word should be `[1, 3]` which is the third list (position 2) inside `output_lst`
 
 
